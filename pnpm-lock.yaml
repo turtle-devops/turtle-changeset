@@ -7,7 +7,7 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@changesets/changelog-github':
         specifier: ^0.5.1
         version: 0.5.1
@@ -17,6 +17,11 @@ importers:
       turbo:
         specifier: ^2.5.0
         version: 2.5.5
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
+  apps/apis: {}
 
 packages:
 
@@ -439,6 +444,11 @@ packages:
 
   turbo@2.5.5:
     resolution: {integrity: sha512-eZ7wI6KjtT1eBqCnh2JPXWNUAxtoxxfi6VdBdZFvil0ychCOTxbm7YLRBi1JSt7U3c+u3CLxpoPxLdvr/Npr3A==}
+    hasBin: true
+
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   universalify@0.1.2:
@@ -922,6 +932,8 @@ snapshots:
       turbo-linux-arm64: 2.5.5
       turbo-windows-64: 2.5.5
       turbo-windows-arm64: 2.5.5
+
+  typescript@5.8.3: {}
 
   universalify@0.1.2: {}
 
